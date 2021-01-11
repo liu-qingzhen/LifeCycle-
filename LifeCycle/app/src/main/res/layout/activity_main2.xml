@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".counter.CounterActivity">
+
+    <RelativeLayout
+        android:id="@+id/linearlayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/top_text_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="OnPause"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/Total_time"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/checklist" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearlayou_center"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/work_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:hint="Task Name"
+            android:textColorHighlight="@color/gray_default_dark"
+            android:textColorHint="@android:color/black"
+            android:textColorLink="@color/gray_default_dark" />
+
+        <RelativeLayout
+            android:id="@+id/setwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/set_time"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="3dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_marginEnd="3dip"
+                android:layout_marginRight="3dip"
+                android:layout_marginBottom="3dip"
+                android:background="@drawable/setting" />
+
+            <TextView
+                android:id="@+id/work_time1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/set_time"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="setting"
+                android:textSize="16sp"
+                tools:text="setting" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/ic_small_blue_rectangular"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/start">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="START"/>
+    </RelativeLayout>
+
+</RelativeLayout>
